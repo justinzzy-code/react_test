@@ -4,7 +4,10 @@ import Landing from './pages/landing';
 import CreateTask from './pages/create';
 
 function App() {
-  return <BrowserRouter>
+
+
+  
+  return <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Landing />} />
