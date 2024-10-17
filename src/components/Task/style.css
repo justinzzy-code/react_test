@@ -1,0 +1,57 @@
+details {
+    border: 1px solid blanchedalmond;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+details summary {
+    position: relative;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+details[open] summary {  
+    border-radius: 7px 7px 0 0;
+}
+
+details summary > * {
+    display: inline;
+}
+
+details summary span {
+    position: absolute;
+    text-align: right;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+details p {
+    padding: 8px 0;
+}
+
+details > div {
+    margin: 8px 1.5em;
+}
+
+.expired {
+    border-color: crimson;
+}
+
+.expired summary {
+    background-color: crimson;
+}
+
+.completed {
+    border-color: dodgerblue;
+}
+
+.completed summary {
+    background-color: dodgerblue;
+}
+
+.completed p {
+    text-decoration: line-through;
+}
